@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  margin: 4rem auto;
+  width: min(90vw, 54ch);
+}
+
+/* COMPONENT: NUMBER PICKER */
+
+[data-part='label'] {
+  display: block;
+}
+
+[data-part='spin-button'] {
+  background: black;
+  border: 0;
+  color: white;
+}
+
+[data-part='spin-button'][data-disabled] {
+  opacity: 0.25;
+}
+
+[data-part='clear-button'] {
+  border: none;
+  background: none;
+  margin-left: 0.5rem;
+}
+
+[data-part='input'] {
+  margin: 0 0.5rem;
+}
+
+[data-part='scrubber'] {
+  border: 2px solid red;
+  width: 25px;
+  height: 25px;
+}
